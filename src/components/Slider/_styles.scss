@@ -1,0 +1,37 @@
+.slider {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 522px;
+
+    &__card {
+      background: #ffffff;
+      width: 100%;
+      border: 1px solid #000000;
+      display: flex;
+      &:first-child {
+        margin-bottom: 27px;
+      }
+
+      &__content {
+        padding: 18px 26px 12px 31px;
+        font-family: "Rubik";
+        font-style: normal;
+        color: #000000;
+
+        p {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 165%;
+          margin-bottom: 9px;
+        }
+        h4 {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 195%;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

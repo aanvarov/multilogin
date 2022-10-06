@@ -1,20 +1,17 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import "./_styles.scss";
-
 import MultiLoginLogo from "../../../components/MultiLoginLogo";
+import MultiloginTextLogo from "../../TextLogo";
 
 const Header: React.FunctionComponent = () => (
-  <div className="layoutheader">
-    <div className="layoutheader__content">
-      <div className="company__logo">
-        <MultiLoginLogo />
-      </div>
-      <Link to="/" className="layoutheader__link">
-        MultiLogin
-      </Link>
+  <div className="d-flex align-items-center p-3">
+    <div>
+      <MultiLoginLogo />
     </div>
+    <Link to="https://multilogin.com/" className="mt-2 mx-3">
+      <MultiloginTextLogo />
+    </Link>
   </div>
 );
 

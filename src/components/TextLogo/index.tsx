@@ -2,10 +2,10 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const DotsIcon = () => {
+const MultiloginTextLogo = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "dotsIcon.png" }) {
+      file(relativePath: { eq: "multiloginTextLogo.png" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
         }
@@ -13,7 +13,9 @@ const DotsIcon = () => {
     }
   `);
 
-  return <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt="dots-icon" />;
+  return (
+    <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt="multilogin-text-logo" />
+  );
 };
 
-export default DotsIcon;
+export default MultiloginTextLogo;

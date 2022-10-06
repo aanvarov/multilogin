@@ -11,7 +11,7 @@ interface ILayout {
 
 const Layout: React.FunctionComponent<ILayout> = ({ children }) => {
   return (
-    <div className="layout">
+    <div className="vh-100 container d-flex flex-column justify-content-between">
       <Header />
       {children}
       <Footer />
