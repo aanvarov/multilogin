@@ -9,24 +9,22 @@ import Slider from "../components/Slider";
 const IndexPage = () => {
   return (
     <Layout>
-      <main className="main row">
-        <div className="col-lg-6 ">
-          <div className="row h-100">
-            <div className="col-7">
-              <h1 className="main__title">Claim the offer</h1>
-              <p className="main__text">
-                To claim, simply fill in your email below and follow the instructions that appear.
-              </p>
-            </div>
-            <div className="col-5 d-flex align-items-end justify-content-center position-relative h-100 pb-4">
-              <div className="position-absolute dots">
+      <main className="main row py-5">
+        <div className="col-xl-6 col-lg-5 col-md-12 position-relative">
+          <h1 className="main__title">Claim the offer</h1>
+          <p className="main__text">
+            To claim, simply fill in your email below and follow the instructions that appear.
+          </p>
+          <div className="main__pic">
+            <div className="picsWrapper">
+              <div className="dots">
                 <DotsIcon />
               </div>
               <MultiloginBlack />
             </div>
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-xl-6 col-lg-7 col-md-12 py-5 mt-5">
           <Slider />
         </div>
       </main>
@@ -36,4 +34,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <title>MultiLogin | Home Page</title>;

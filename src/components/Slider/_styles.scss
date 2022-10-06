@@ -2,13 +2,13 @@
   &__item {
     display: flex;
     flex-direction: column;
-    max-width: 522px;
 
     &__card {
       background: #ffffff;
       width: 100%;
       border: 1px solid #000000;
       display: flex;
+
       &:first-child {
         margin-bottom: 27px;
       }
@@ -37,6 +37,8 @@
 }
 
 .carousel {
+  max-width: 522px;
+  margin: 0 auto;
   position: relative;
   .carousel-control-prev,
   .carousel-control-next {
@@ -49,14 +51,88 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: #000000;
+    opacity: 0.3;
+  }
   .carousel-control-prev {
-    left: -50px;
+    left: -60px;
   }
   .carousel-control-next {
-    right: -30px;
+    right: -60px;
   }
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     width: 19.5px;
+  }
+}
+@media (max-width: 1200px) {
+  .carousel {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    max-width: unset;
+  }
+}
+@media (max-width: 768px) {
+  .carousel {
+    .carousel-control-prev,
+    .carousel-control-next {
+      opacity: 0.2;
+      top: unset;
+      bottom: -60px;
+    }
+    .carousel-control-prev {
+      left: 50%;
+      transform: translateX(-110%);
+    }
+    .carousel-control-next {
+      right: 50%;
+      transform: translateX(110%);
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .slider {
+    &__item {
+      &__card {
+        &__image {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &__content {
+          padding: 15px;
+          color: red;
+          p {
+            margin-bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 460px) {
+  .slider {
+    &__item {
+      &__card {
+        flex-direction: column;
+        &__image {
+          padding: 5px;
+        }
+        &__content {
+          padding: 15px;
+          color: red;
+          p {
+            margin-bottom: 2px;
+          }
+        }
+      }
+    }
   }
 }
