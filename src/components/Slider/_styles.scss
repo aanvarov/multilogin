@@ -35,3 +35,28 @@
     }
   }
 }
+
+.carousel {
+  position: relative;
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #000000;
+    opacity: 0.1;
+    width: 44.15px;
+    height: 44.15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .carousel-control-prev {
+    left: -50px;
+  }
+  .carousel-control-next {
+    right: -30px;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 19.5px;
+  }
+}

@@ -10,15 +10,23 @@ const IndexPage = () => {
   return (
     <Layout>
       <main className="main row">
-        <div className="col-6">
-          <h1 className="main__title">Claim the offer</h1>
-          <p className="main__text">
-            To claim, simply fill in your email below and follow the instructions that appear.
-          </p>
-          <DotsIcon />
-          <MultiloginBlack />
+        <div className="col-lg-6 ">
+          <div className="row h-100">
+            <div className="col-7">
+              <h1 className="main__title">Claim the offer</h1>
+              <p className="main__text">
+                To claim, simply fill in your email below and follow the instructions that appear.
+              </p>
+            </div>
+            <div className="col-5 d-flex align-items-end justify-content-center position-relative h-100 pb-4">
+              <div className="position-absolute dots">
+                <DotsIcon />
+              </div>
+              <MultiloginBlack />
+            </div>
+          </div>
         </div>
-        <div className="slider__wrapper col-6">
+        <div className="col-lg-6">
           <Slider />
         </div>
       </main>
